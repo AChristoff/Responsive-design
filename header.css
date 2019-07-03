@@ -1,5 +1,5 @@
 .site-header {
-      border-bottom: 3px solid purple;
+      border-bottom: 3px solid #68347B;
       }
 
 .site-header .wrapper {
@@ -33,7 +33,7 @@
 .site-nav ul li a:focus,
 .site-nav ul li a:hover {
       color: white;
-      background: purple;
+      background: #68347B;
       border-radius: 0.5em;
       }
 
@@ -59,6 +59,10 @@
       text-transform: uppercase;
       font-family: 'PT Sans Narrow', serif;
       font-size: 1.15em;
-      line-height: 0.6;
+      line-height: 0.8;
+      }
+
+.site-description a {
+      color: #6D6D6D;
       }
 
