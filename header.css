@@ -7,11 +7,56 @@
       align-items: center;
       }
 
-.site-nav {
-      margin-left: auto;
+.site-header a {
+      text-decoration: none;
+      color: black;
       }
 
-.site-nav ul {
+.site-branding .site-title {
+      margin: 0;
+      font-size: 3rem;
+      font-family: Georgia, serif;
+      }
+
+p.site-title {
+      margin: 0;
+      padding: 0;
+      }
+
+.site-branding .site-title a {
+      color: #68347B;
+      line-height: 1;
+      }
+
+.site-description {
+      text-transform: uppercase;
+      font-family: 'PT Sans Narrow', serif;
+      font-size: 1.15em;
+      line-height: 0.6;
+      }
+
+.site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 7em;background-color: #FFFFFF;
+      z-index: 100;
+      }
+
+.section-cta {
+      margin-top: 10em;
+      }
+
+.site-nav {
+      margin-left: auto;
+      position: absolute;
+      top: 50%;
+      left: 47%;
+      transform: translateY(-50%);
+      }
+
+.site-nav > ul {
       padding: 0;
       margin: 0;
       display: flex;
@@ -30,39 +75,51 @@
       outline: none;
       }
 
-.site-nav ul li a:focus,
-.site-nav ul li a:hover {
+.site-nav ul a:focus,
+.site-nav ul a:hover,
+.site-nav ul li:hover > a {
       color: white;
       background: #68347B;
       border-radius: 0.5em;
       }
 
-
-.site-header a {
-      text-decoration: none;
-      color: black;
-      }
-
-.site-branding .site-title {
+.site-nav li > ul {
+      display: none;
+      padding: 0;
       margin: 0;
-      padding: 1.2rem 0 0 0;
-      font-size: 3rem;
-      font-family: Georgia, serif;
       }
 
-.site-branding .site-title a {
-      color: purple;
-      line-height: 1;
+.site-nav li:hover > ul {
+      display: block;
+      position: absolute;
+      background-color: #FFFFFF;
+      border: 3px solid #68347B;
+      border-radius: 0.8em;
       }
 
-.site-description {
-      text-transform: uppercase;
-      font-family: 'PT Sans Narrow', serif;
-      font-size: 1.15em;
-      line-height: 0.8;
+.site-nav > ul > li > ul > li {
+      padding: 0;
+      margin: 0;
+
       }
 
-.site-description a {
-      color: #6D6D6D;
+.site-nav li > ul > li:hover > ul {
+      position: absolute;
+      top: 50%;
+      left: 100%;
       }
+
+.site-nav li > ul > li > ul > li {
+      padding: 0;
+      margin: 0;
+      }
+
+.fa-caret-down,
+.fa-caret-right {
+      padding-left: 0.5em;
+      }
+
+
+
+
 
